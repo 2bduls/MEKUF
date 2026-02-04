@@ -1,19 +1,23 @@
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
+# Dependencies
+node_modules/
+package-lock.json
 
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# SSL Certificates (don't commit these!)
+cert.pem
+key.pem
+*.pfx
+*.p12
 
 # Logs
 *.log
 npm-debug.log*
 
-# Temporary files
-*.tmp
-*.temp
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

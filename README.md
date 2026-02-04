@@ -32,10 +32,13 @@
 
 ```
 MEKUF/
-├── index.html      # الصفحة الرئيسية
-├── styles.css      # ملف التنسيقات
-├── script.js       # ملف JavaScript
-└── README.md       # ملف التوثيق
+├── index.html         # الصفحة الرئيسية
+├── styles.css         # ملف التنسيقات
+├── script.js          # ملف JavaScript
+├── server.js          # خادم HTTPS
+├── package.json       # ملف التبعيات
+├── generate-cert.js   # سكريبت إنشاء الشهادات
+└── README.md          # ملف التوثيق
 ```
 
 ## الأقسام
@@ -56,6 +59,75 @@ MEKUF/
 ## المتطلبات
 
 لا توجد متطلبات خاصة - الموقع يعمل مباشرة في المتصفح!
+
+## تشغيل HTTPS محلياً
+
+لتشغيل الموقع عبر HTTPS على جهازك المحلي:
+
+### الطريقة الأولى: استخدام Node.js Server (موصى به)
+
+1. تثبيت المتطلبات:
+```bash
+npm install
+```
+
+2. إنشاء شهادات SSL:
+```bash
+npm run generate-cert
+```
+
+أو يدوياً:
+
+**Windows (PowerShell):**
+```powershell
+$cert = New-SelfSignedCertificate -DnsName "localhost" -CertStoreLocation "cert:\\CurrentUser\\My" -KeyExportPolicy Exportable
+Export-Certificate -Cert $cert -FilePath cert.pem
+```
+
+**Linux/Mac:**
+```bash
+openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 365 -subj "/CN=localhost"
+```
+
+3. تشغيل الخادم:
+```bash
+npm start
+```
+
+4. افتح المتصفح على: `https://localhost:8443`
+   - قد تحتاج لقبول تحذير الشهادة الذاتية التوقيع
+   - يمكنك تغيير المنفذ عبر: `HTTPS_PORT=3000 npm start`
+
+### الطريقة الثانية: استخدام mkcert (أسهل)
+
+1. تثبيت mkcert:
+   - Windows: `choco install mkcert` أو `scoop install mkcert`
+   - Mac: `brew install mkcert`
+   - Linux: اتبع التعليمات من [mkcert GitHub](https://github.com/FiloSottile/mkcert)
+
+2. إنشاء شهادات:
+```bash
+mkcert -install
+mkcert localhost
+```
+
+3. إعادة تسمية الملفات:
+```bash
+mv localhost.pem cert.pem
+mv localhost-key.pem key.pem
+```
+
+4. تشغيل الخادم:
+```bash
+npm start
+```
+
+## HTTPS على GitHub Pages
+
+GitHub Pages يوفر HTTPS تلقائياً لجميع المواقع المنشورة. لا حاجة لإعدادات إضافية!
+
+عند نشر الموقع على GitHub Pages، سيكون متاحاً عبر:
+- `https://yourusername.github.io/MEKUF`
 
 ## الترخيص
 
