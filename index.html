@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEKUF - تطوير التطبيقات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>MEKUF</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">ماذا نقدم</a></li>
+                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">نطور</span> تطبيقات
+                    <br>لخدمة المجتمع
+                </h1>
+                <p class="hero-subtitle">نطور تطبيقاتنا الخاصة المبتكرة لتقديم حلول رقمية مفيدة للمجتمع</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">اكتشف تطبيقاتنا</a>
+                    <a href="#about" class="btn btn-secondary">تعرف علينا</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <a href="#portfolio" class="floating-card app-card card-1 sherehub-card">
+                    <div class="card-icon">📁</div>
+                    <h3>Sherehub</h3>
+                </a>
+                <a href="#portfolio" class="floating-card app-card card-2 cooknote-card">
+                    <div class="card-icon">🍳</div>
+                    <h3>CookNote</h3>
+                </a>
+                <a href="#portfolio" class="floating-card app-card card-3 nart-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Nart</h3>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أعمالنا</h2>
+                <p class="section-subtitle">مشاريع نفتخر بها</p>
+            </div>
+            
+            <!-- Projects in Development -->
+            <div class="portfolio-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🚧</span>
+                    المشاريع قيد التطوير
+                </h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card in-development">
+                        <div class="portfolio-content-wrapper">
+                            <div class="portfolio-main-content">
+                                <div class="portfolio-header">
+                                    <div class="portfolio-icon">📁</div>
+                                    <div class="portfolio-badge development-badge">قيد التطوير</div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <h3>Sherehub</h3>
+                                    <p class="portfolio-description">برنامج نقل ملفات بسيط وسهل الاستخدام</p>
+                                    <div class="portfolio-tags">
+                                        <span class="tag">نقل ملفات</span>
+                                        <span class="tag">سهل الاستخدام</span>
+                                    </div>
+                                    <p class="portfolio-partner">🤝 بالتعاون مع diyomx</p>
+                                    <div class="progress-indicator">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 80%"></div>
+                                        </div>
+                                        <span class="progress-text">80% مكتمل</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-footer">
+                                    <a href="#" class="portfolio-link">معرفة المزيد →</a>
+                                </div>
+                            </div>
+                            <div class="platforms-section">
+                                <div class="platforms-list">
+                                    <span class="platform-icon android" title="Android">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#3DDC84" d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5674.416.416 0 00-.5674.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1349 1.0989L4.8429 5.4467a.4161.4161 0 00-.5674-.1521.4157.4157 0 00-.1521.5674l1.9973 3.4592C2.6889 11.186.8535 12.3074.0116 13.776a.416.416 0 00.1689.5674c.1898.1095.4084.075.5674-.1689.6979-1.0289 1.6465-1.7769 2.8338-2.2825l-.3077 3.3239a.4157.4157 0 00.405.456h.1509a.4157.4157 0 00.415-.405l.329-3.5534c1.2297.3156 2.5448.3156 3.7745 0l.329 3.5534a.4157.4157 0 00.415.405h.1509c.2398 0 .4328-.1931.405-.456l-.3077-3.3239c1.1873.5056 2.1359 1.2536 2.8338 2.2825a.416.416 0 00.5674.1689c.2398-.1395.3207-.456.1689-.5674-1.0106-1.5995-2.8644-2.7209-5.0116-3.0708"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon ios" title="iOS">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#000000" d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C1.79 15.25 4.18 5.95 12.07 6c1.88.01 3.22.93 4.18 1.85-1.25.87-1.79 2.03-1.38 3.2.5 1.56 2.15 2.05 3.39 1.25.2-.08.37-.15.54-.23 1.92-.8 3.6.15 2.95 2.38-.6 2.02-2.07 4.9-4.75 3.83M12.03 7.5c-.05-2.23 1.84-4.09 4.05-4.09.09 0 .18 0 .27.01-1.19 1.01-2.11 2.5-2.66 4.2-.55-.01-1.11-.05-1.66-.12"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon windows" title="Windows">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#0078D4" d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v7.81l-6-1.15V13zm17 .25V22l-10-1.8v-7.15l10 .2z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon mac" title="MacBook">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#808080" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card in-development">
+                        <div class="portfolio-content-wrapper">
+                            <div class="portfolio-main-content">
+                                <div class="portfolio-header">
+                                    <div class="portfolio-icon">🍳</div>
+                                    <div class="portfolio-badge development-badge">قيد التطوير</div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <h3>CookNote</h3>
+                                    <p class="portfolio-description">تطبيق وصفات عالمي للطهي ومشاركة الوصفات</p>
+                                    <div class="portfolio-tags">
+                                        <span class="tag">وصفات</span>
+                                        <span class="tag">مشاركة</span>
+                                        <span class="tag">مجتمع</span>
+                                    </div>
+                                    <div class="progress-indicator">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 65%"></div>
+                                        </div>
+                                        <span class="progress-text">65% مكتمل</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-footer">
+                                    <a href="#" class="portfolio-link">معرفة المزيد →</a>
+                                </div>
+                            </div>
+                            <div class="platforms-section">
+                                <div class="platforms-list">
+                                    <span class="platform-icon android" title="Android">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#3DDC84" d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5674.416.416 0 00-.5674.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1349 1.0989L4.8429 5.4467a.4161.4161 0 00-.5674-.1521.4157.4157 0 00-.1521.5674l1.9973 3.4592C2.6889 11.186.8535 12.3074.0116 13.776a.416.416 0 00.1689.5674c.1898.1095.4084.075.5674-.1689.6979-1.0289 1.6465-1.7769 2.8338-2.2825l-.3077 3.3239a.4157.4157 0 00.405.456h.1509a.4157.4157 0 00.415-.405l.329-3.5534c1.2297.3156 2.5448.3156 3.7745 0l.329 3.5534a.4157.4157 0 00.415.405h.1509c.2398 0 .4328-.1931.405-.456l-.3077-3.3239c1.1873.5056 2.1359 1.2536 2.8338 2.2825a.416.416 0 00.5674.1689c.2398-.1395.3207-.456.1689-.5674-1.0106-1.5995-2.8644-2.7209-5.0116-3.0708"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon ios" title="iOS">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#000000" d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C1.79 15.25 4.18 5.95 12.07 6c1.88.01 3.22.93 4.18 1.85-1.25.87-1.79 2.03-1.38 3.2.5 1.56 2.15 2.05 3.39 1.25.2-.08.37-.15.54-.23 1.92-.8 3.6.15 2.95 2.38-.6 2.02-2.07 4.9-4.75 3.83M12.03 7.5c-.05-2.23 1.84-4.09 4.05-4.09.09 0 .18 0 .27.01-1.19 1.01-2.11 2.5-2.66 4.2-.55-.01-1.11-.05-1.66-.12"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card in-development">
+                        <div class="portfolio-content-wrapper">
+                            <div class="portfolio-main-content">
+                                <div class="portfolio-header">
+                                    <div class="portfolio-icon">⚡</div>
+                                    <div class="portfolio-badge development-badge">قيد التطوير</div>
+                                </div>
+                                <div class="portfolio-body">
+                                    <h3>Nart</h3>
+                                    <p class="portfolio-description">تطبيق نقل بيانات وملفات بشكل متطور وسريع جداً</p>
+                                    <div class="portfolio-tags">
+                                        <span class="tag">نقل بيانات</span>
+                                        <span class="tag">سريع</span>
+                                        <span class="tag">مميزات فريدة</span>
+                                    </div>
+                                    <p class="portfolio-partner">🤝 بالتعاون مع diyomx</p>
+                                    <div class="progress-indicator">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 45%"></div>
+                                        </div>
+                                        <span class="progress-text">45% مكتمل</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-footer">
+                                    <a href="#" class="portfolio-link">معرفة المزيد →</a>
+                                </div>
+                            </div>
+                            <div class="platforms-section">
+                                <div class="platforms-list">
+                                    <span class="platform-icon android" title="Android">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#3DDC84" d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5674.416.416 0 00-.5674.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1349 1.0989L4.8429 5.4467a.4161.4161 0 00-.5674-.1521.4157.4157 0 00-.1521.5674l1.9973 3.4592C2.6889 11.186.8535 12.3074.0116 13.776a.416.416 0 00.1689.5674c.1898.1095.4084.075.5674-.1689.6979-1.0289 1.6465-1.7769 2.8338-2.2825l-.3077 3.3239a.4157.4157 0 00.405.456h.1509a.4157.4157 0 00.415-.405l.329-3.5534c1.2297.3156 2.5448.3156 3.7745 0l.329 3.5534a.4157.4157 0 00.415.405h.1509c.2398 0 .4328-.1931.405-.456l-.3077-3.3239c1.1873.5056 2.1359 1.2536 2.8338 2.2825a.416.416 0 00.5674.1689c.2398-.1395.3207-.456.1689-.5674-1.0106-1.5995-2.8644-2.7209-5.0116-3.0708"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon ios" title="iOS">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#000000" d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C1.79 15.25 4.18 5.95 12.07 6c1.88.01 3.22.93 4.18 1.85-1.25.87-1.79 2.03-1.38 3.2.5 1.56 2.15 2.05 3.39 1.25.2-.08.37-.15.54-.23 1.92-.8 3.6.15 2.95 2.38-.6 2.02-2.07 4.9-4.75 3.83M12.03 7.5c-.05-2.23 1.84-4.09 4.05-4.09.09 0 .18 0 .27.01-1.19 1.01-2.11 2.5-2.66 4.2-.55-.01-1.11-.05-1.66-.12"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon windows" title="Windows">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#0078D4" d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .15V5.21L20 3zM3 13l6 .09v7.81l-6-1.15V13zm17 .25V22l-10-1.8v-7.15l10 .2z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon mac" title="MacBook">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#808080" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                        </svg>
+                                    </span>
+                                    <span class="platform-icon web" title="Web">
+                                        <svg viewBox="0 0 24 24" width="32" height="32">
+                                            <path fill="#6366F1" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ماذا نقدم</h2>
+                <p class="section-subtitle">تطبيقات مبتكرة لخدمة المجتمع</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>تطبيقات الموبايل</h3>
+                    <p>نطور تطبيقات موبايل مبتكرة لخدمة المجتمع بأحدث التقنيات</p>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>Native Development</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>تطبيقات الويب</h3>
+                    <p>نطور تطبيقات ويب متجاوبة وسريعة لخدمة المستخدمين</p>
+                    <ul>
+                        <li>React & Vue.js</li>
+                        <li>Node.js</li>
+                        <li>Full Stack Solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>تجربة مستخدم متميزة</h3>
+                    <p>نركز على تصميم واجهات مستخدم جذابة وسهلة الاستخدام</p>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>User-Centered Design</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>تطوير مستمر</h3>
+                    <p>نطور ونحسن تطبيقاتنا باستمرار لتقديم أفضل تجربة</p>
+                    <ul>
+                        <li>Continuous Updates</li>
+                        <li>Performance Optimization</li>
+                        <li>New Features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">من نحن</h2>
+                    <p>MEKUF فريق متخصص في تطوير التطبيقات والحلول الرقمية. نحن نؤمن بأن التكنولوجيا يجب أن تكون في خدمة المجتمع، ونعمل على تطوير تطبيقاتنا الخاصة المبتكرة التي تجعل الحياة أسهل وأكثر كفاءة.</p>
+                    <p>فريقنا من المطورين والمصممين المحترفين يعملون معاً لتطوير تطبيقات مفيدة تخدم المجتمع وتقدم قيمة حقيقية للمستخدمين.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>0</h3>
+                            <p>تطبيق مكتمل</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3</h3>
+                            <p>تطبيق قيد التطوير</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>0</h3>
+                            <p>مستخدم نشط</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1</h3>
+                            <p>سنوات خبرة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Flutter</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">اتصل بنا</h2>
+                <p class="section-subtitle">نحن هنا للإجابة على استفساراتك ومقترحاتك</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>info@mekuf.com</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <h3>العنوان</h3>
+                        <p>مسقط، سلطنة عمان</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="الموضوع" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="الرسالة" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    <p style="text-align: center; margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">ملاحظة: نحن لا نطور تطبيقات للعملاء، بل نطور تطبيقاتنا الخاصة لخدمة المجتمع</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MEKUF</h3>
+                    <p>نطور تطبيقاتنا الخاصة لخدمة المجتمع</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">ماذا نقدم</a></li>
+                        <li><a href="#portfolio">أعمالنا</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MEKUF. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
